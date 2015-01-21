@@ -1,7 +1,6 @@
-// $Id$
-
 oEmbed 6.x-0.9, xxxx-xx-xx
 ------------------------------
+#892988 by bangpound: Use ctools export UI for presets, providers.
 #966122 by voxpelli: Cache clearing calls was missing table
 #992124 by voxpelli: Improved the handling of invalid oEmbed responses
 by voxpelli: Flush provider cache on Embed.ly refresh
