@@ -1761,6 +1761,7 @@ function ckeditor_toolbar_buttons_all() {
     'Unlink' => array('name' => 'Unlink', 'icon' => $path . '/images/buttons/unlink.png', 'title' => 'Unlink', 'row' => 2),
     'Anchor' => array('name' => 'Anchor', 'icon' => $path . '/images/buttons/anchor.png', 'title' => 'Anchor', 'row' => 2),
     'Image' => array('name' => 'Image', 'icon' => $path . '/images/buttons/image.png', 'title' => 'Image', 'row' => 2),
+    'CodeSnippet' => array('name' => 'CodeSnippet', 'icon' => $path . '/images/buttons/codesnippet.png', 'title' => 'Code Snippet', 'row' => 2),
     'Flash' => array('name' => 'Flash', 'icon' => $path . '/images/buttons/flash.png', 'title' => 'Flash', 'row' => 2),
     'Table' => array('name' => 'Table', 'icon' => $path . '/images/buttons/table.png', 'title' => 'Table', 'row' => 2),
     'HorizontalRule' => array('name' => 'HorizontalRule', 'icon' => $path . '/images/buttons/horizontalrule.png', 'title' => 'Insert Horizontal Line', 'row' => 2),
