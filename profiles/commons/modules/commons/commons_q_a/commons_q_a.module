@@ -12,7 +12,7 @@ include_once 'commons_q_a.features.inc';
 function commons_q_a_theme() {
   return array(
     'rate_template_commons_thumbs_up_down' => array(
-      'variables' => array('links' => NULL, 'results' => NULL, 'mode' => NULL, 'just_voted' => FALSE, 'content_type' => NULL, 'content_id' => NULL, 'display_options' => NULL),
+      'variables' => array('links' => NULL, 'results' => NULL, 'mode' => NULL, 'just_voted' => FALSE, 'entity_type' => NULL, 'entity_id' => NULL, 'display_options' => NULL),
       'template' => 'commons-thumbs-up-down',
     ),
   );
@@ -88,7 +88,7 @@ function commons_q_a_form_commons_bw_partial_node_form_after_build($form) {
   return $form;
 }
 
-/*
+/**
  * Run an access check to see if the current user can create answer nodes based
  * off of the question node.
  */
@@ -184,7 +184,7 @@ function commons_q_a_views_pre_render(&$view) {
   }
 }
 
-/*
+/**
  * Implements hook_module_implements_alter().
  * Set commons_q_a form alter to happen after node so the title doesn't get reset.
  */
@@ -249,7 +249,6 @@ function commons_q_a_field_attach_submit($entity_type, &$entity, $form, &$form_s
   // Questions should inherit the group membership of the related question.
   if ($entity_type == 'node' && $entity->type == 'answer' && empty($entity->nid)) {
     $question = node_load($entity->field_related_question[LANGUAGE_NONE][0]['target_id']);
-    $entity->group_audience_type = $question->group_audience_type;
     $entity->og_group_ref = $question->og_group_ref;
   }
 }
